@@ -14,18 +14,17 @@
 
 const balloon = document.getElementById("balloon");
 
-let fontSize = 10; 
+let fontSize = 30; 
 balloon.style.fontSize = fontSize + 'px';
 function handleKeyDown(event) {
   if (event.key == 'ArrowUp') {
-    if (fontSize >30){
+    if (fontSize>30){
       balloon.textContent = "💥";
       removeEventListener('keydown', handleKeyDown);
     } else{
     fontSize *= 1.1;
     balloon.style.fontSize = fontSize + 'px';
     event.preventDefault();
-    }
   } else if (event.key == 'ArrowDown') {
     fontSize *= 0.9;
     balloon.style.fontSize = fontSize + 'px';
