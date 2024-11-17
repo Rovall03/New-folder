@@ -61,8 +61,17 @@ function showtab(tabtoshow){
 }
 /*starts with tab 1 default */
 showtab(tab1);
+/*event listeners to tabs when tab is selected */
 
 tab1link.addEventListener("click", function(event){
   event.defaultPrevented();
   showtab(tab1);
+})
+tab2link.addEventListener("click", function(event){
+  event.defaultPrevented();
+  showtab(tab2);
+})
+tab3link.addEventListener("click",function(event){
+  even.preventDefault();
+  showtab(tab3)
 })
